@@ -10,7 +10,7 @@
     "postinstall": "echo 'Installation complete'"
   },
   "dependencies": {
-    "n8n": "^1.19.4"
+    "n8n": "^1.105.2"
   },
   "engines": {
     "node": ">=18.0.0",
