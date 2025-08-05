@@ -4,8 +4,7 @@
   "description": "n8n workflow automation tool deployed on Railway",
   "main": "index.js",
   "scripts": {
-    "start": "n8n start",
-    "dev": "n8n start --tunnel",
+      "start": "echo '--- STARTING DIAGNOSTIC ---' && printenv && echo '--- DIAGNOSTIC COMPLETE ---' && n8n start"    "dev": "n8n start --tunnel",
     "build": "echo 'No build step required'",
     "postinstall": "echo 'Installation complete'"
   },
