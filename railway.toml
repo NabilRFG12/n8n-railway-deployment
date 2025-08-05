@@ -1,0 +1,29 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+healthcheckPath = "/healthz"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "n8n"
+
+[services.variables]
+NODE_ENV = "production"
+N8N_HOST = "0.0.0.0"
+N8N_PORT = "5678"
+N8N_PROTOCOL = "https"
+WEBHOOK_URL = "https://${{RAILWAY_PUBLIC_DOMAIN}}"
+N8N_EDITOR_BASE_URL = "https://${{RAILWAY_PUBLIC_DOMAIN}}"
+N8N_SECURE_COOKIE = "true"
+N8N_METRICS = "true"
+N8N_LOG_LEVEL = "info"
+N8N_LOG_OUTPUT = "console"
+EXECUTIONS_PROCESS = "main"
+EXECUTIONS_MODE = "regular"
+QUEUE_BULL_REDIS_HOST = ""
+QUEUE_BULL_REDIS_PORT = ""
+QUEUE_BULL_REDIS_DB = ""
+QUEUE_BULL_REDIS_PASSWORD = ""

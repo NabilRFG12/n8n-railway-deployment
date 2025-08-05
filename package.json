@@ -1,0 +1,27 @@
+{
+  "name": "n8n-railway-deployment",
+  "version": "1.0.0",
+  "description": "n8n workflow automation tool deployed on Railway",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel",
+    "build": "echo 'No build step required'",
+    "postinstall": "echo 'Installation complete'"
+  },
+  "dependencies": {
+    "n8n": "^1.19.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "automation",
+    "railway"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
