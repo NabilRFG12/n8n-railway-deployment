@@ -4,7 +4,7 @@
   "description": "n8n workflow automation tool deployed on Railway",
   "main": "index.js",
   "scripts": {
-    "start": "echo '--- STARTING DIAGNOSTIC ---' && printenv && echo '--- DIAGNOSTIC COMPLETE ---' && n8n start",
+    "start": "n8n start",
     "dev": "n8n start --tunnel"
   },  "dependencies": {
     "n8n": "^1.105.2"
